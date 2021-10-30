@@ -1,0 +1,323 @@
+{
+  "components": [
+    {
+      "name": "_button",
+      "display_name": "Bottone",
+      "created_at": "2021-10-30T16:59:37.444Z",
+      "updated_at": "2021-10-30T16:59:37.444Z",
+      "id": 1910235,
+      "schema": {
+        "text": {
+          "type": "text"
+        },
+        "link": {
+          "type": "text"
+        },
+        "color": {
+          "type": "options",
+          "options": [
+            {
+              "value": "primary",
+              "name": "Primary"
+            },
+            {
+              "value": "link",
+              "name": "Link"
+            },
+            {
+              "value": "info",
+              "name": "Info"
+            },
+            {
+              "value": "success",
+              "name": "Success"
+            },
+            {
+              "value": "warning",
+              "name": "Warning"
+            },
+            {
+              "value": "danger",
+              "name": "Danger"
+            }
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Bottone",
+      "component_group_uuid": "69f9ff8f-0bb7-4827-902e-7777f609d1dc",
+      "color": null,
+      "icon": null,
+      "component_group_name": "Content"
+    },
+    {
+      "name": "_carousel",
+      "display_name": "Galleria di immagini",
+      "created_at": "2021-10-30T16:59:37.693Z",
+      "updated_at": "2021-10-30T16:59:37.693Z",
+      "id": 1910237,
+      "schema": {
+        "images": {
+          "type": "bloks",
+          "display_name": "Immagini",
+          "restrict_components": true,
+          "component_whitelist": [
+            "_image"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Galleria di immagini",
+      "component_group_uuid": "69f9ff8f-0bb7-4827-902e-7777f609d1dc",
+      "color": null,
+      "icon": null,
+      "component_group_name": "Content"
+    },
+    {
+      "name": "column",
+      "display_name": "Colonna verticale",
+      "created_at": "2021-10-30T16:59:37.921Z",
+      "updated_at": "2021-10-30T16:59:37.921Z",
+      "id": 1910239,
+      "schema": {
+        "column": {
+          "type": "bloks",
+          "display_name": "Contenuto della colonna",
+          "restrict_components": true,
+          "component_whitelist": [],
+          "restrict_type": "groups",
+          "component_group_whitelist": [
+            "69f9ff8f-0bb7-4827-902e-7777f609d1dc"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Colonna verticale",
+      "component_group_uuid": "9b93dd8d-6843-4bde-99ad-f0f6e1674daf",
+      "color": null,
+      "icon": null,
+      "component_group_name": "Layout"
+    },
+    {
+      "name": "container",
+      "display_name": "Sezione orizzontale",
+      "created_at": "2021-10-30T16:59:38.033Z",
+      "updated_at": "2021-10-30T16:59:38.033Z",
+      "id": 1910240,
+      "schema": {
+        "background_color": {
+          "type": "text",
+          "pos": 0,
+          "display_name": "Colore di sfondo (hex)"
+        },
+        "background_image": {
+          "type": "asset",
+          "pos": 1,
+          "filetypes": [
+            "images"
+          ],
+          "display_name": "Immagine di sfondo"
+        },
+        "columns": {
+          "type": "bloks",
+          "pos": 2,
+          "restrict_components": true,
+          "restrict_type": "",
+          "component_whitelist": [
+            "column"
+          ],
+          "display_name": "Colonne verticali"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Sezione orizzontale",
+      "component_group_uuid": "9b93dd8d-6843-4bde-99ad-f0f6e1674daf",
+      "color": null,
+      "icon": null,
+      "component_group_name": "Layout"
+    },
+    {
+      "name": "_image",
+      "display_name": "Immagine",
+      "created_at": "2021-10-30T16:59:38.136Z",
+      "updated_at": "2021-10-30T16:59:38.136Z",
+      "id": 1910241,
+      "schema": {
+        "image": {
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Immagine",
+      "component_group_uuid": "69f9ff8f-0bb7-4827-902e-7777f609d1dc",
+      "color": null,
+      "icon": null,
+      "component_group_name": "Content"
+    },
+    {
+      "name": "page",
+      "display_name": "Page",
+      "created_at": "2021-10-30T15:02:06.691Z",
+      "updated_at": "2021-10-30T17:12:00.075Z",
+      "id": 1910209,
+      "schema": {
+        "title": {
+          "type": "text",
+          "pos": 0
+        },
+        "subtitle": {
+          "type": "text",
+          "pos": 1
+        },
+        "image": {
+          "type": "asset",
+          "filetypes": [],
+          "pos": 2
+        },
+        "intro": {
+          "type": "text",
+          "pos": 3
+        },
+        "body": {
+          "type": "bloks",
+          "pos": 4,
+          "restrict_components": true,
+          "component_whitelist": [
+            "container"
+          ]
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Page",
+      "component_group_uuid": "f74df7ff-7c9b-4e9e-8f0b-a37bdf5aff94",
+      "color": null,
+      "icon": null,
+      "component_group_name": "Content Type"
+    },
+    {
+      "name": "settings",
+      "display_name": null,
+      "created_at": "2021-10-30T16:59:38.345Z",
+      "updated_at": "2021-10-30T17:02:03.900Z",
+      "id": 1910243,
+      "schema": {
+        "title": {
+          "type": "text",
+          "display_name": "Titolo del sito"
+        },
+        "logo": {
+          "type": "asset",
+          "filetypes": [
+            "images"
+          ]
+        },
+        "footer": {
+          "type": "text"
+        },
+        "background_color": {
+          "type": "text",
+          "display_name": "Colore di sfondo"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": true,
+      "preview_tmpl": null,
+      "is_nestable": false,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "settings",
+      "component_group_uuid": "f74df7ff-7c9b-4e9e-8f0b-a37bdf5aff94",
+      "color": null,
+      "icon": null,
+      "component_group_name": "Content Type"
+    },
+    {
+      "name": "_text",
+      "display_name": "Testo",
+      "created_at": "2021-10-30T16:59:38.440Z",
+      "updated_at": "2021-10-30T16:59:38.440Z",
+      "id": 1910244,
+      "schema": {
+        "text": {
+          "type": "markdown"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Testo",
+      "component_group_uuid": "69f9ff8f-0bb7-4827-902e-7777f609d1dc",
+      "color": null,
+      "icon": null,
+      "component_group_name": "Content"
+    },
+    {
+      "name": "_title",
+      "display_name": "Titolo",
+      "created_at": "2021-10-30T16:59:38.538Z",
+      "updated_at": "2021-10-30T16:59:38.538Z",
+      "id": 1910245,
+      "schema": {
+        "title": {
+          "type": "text"
+        }
+      },
+      "image": null,
+      "preview_field": null,
+      "is_root": false,
+      "preview_tmpl": null,
+      "is_nestable": true,
+      "all_presets": [],
+      "preset_id": null,
+      "real_name": "Titolo",
+      "component_group_uuid": "69f9ff8f-0bb7-4827-902e-7777f609d1dc",
+      "color": null,
+      "icon": null,
+      "component_group_name": "Content"
+    }
+  ]
+}
